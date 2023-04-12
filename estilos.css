@@ -1,19 +1,27 @@
 /* Color primario de fondo */
 body {
-  background-color: #D7E2FA;
+  background-color: #f7d4a8;
 }
 /* Header o navbar*/
 .backnav{
-  background: rgba(37, 20, 7, 0.76);
+  background: rgba(32, 17, 5, 0.849);
   background-image: url(/img/backnav.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
   background-position-y: 25%;
   background-blend-mode: darken;
+  box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
+-webkit-box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
+-moz-box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
   
+
+
 }
 
+.centrado{
+display:block;
+}
 
 /* Color secundario en algunos elementos de la página */
 #servicios h2,
@@ -124,6 +132,6 @@ footer a:hover {
   display: block;
 }
 
-.presentacion-empresa {
-  margin-top: 50px;
+.margin-top {
+  margin-top: 100px;
 }

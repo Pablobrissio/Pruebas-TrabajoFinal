@@ -11,29 +11,50 @@
 <body>
   
     <!-- HEADER --> 
-      <div class="backnav">
-          <nav class="navbar backnav">
-            <div class="container">
-              <a class="navbar-brand mx-auto "href="#">
-                <img src="img/briccio.ico" alt="icono" width="200" height="100">
-              </a>
+      <nav class="nav-brand backnav ">
+            <div class="container-fluid">
+                <img class=" mx-auto d-block" src="img/briccio.ico" alt="icono" width="200" height="100">
             </div>
-        </nav>  
-      </div>
+       
+      </nav>
        
   
     <!-- PRESENTACIONES -->
-  <div class="jumbotron jumbotron-fluid bg-light presentacion-empresa">
+  <div class="jumbotron jumbotron-fluid mt-5 shadow-lg  mb-5 bg-body-tertiary rounded">
     <div class="container">
-      <h2 class="text-center">Presentación de la empresa</h2>
+    
+        <img  class="mx-auto img-fluid d-block" src="img/briccio.png" alt="present" width="600" height="700" >
+     
       <p class="lead text-center">Presentacion empresa.</p>
     </div>
   </div>
   
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid shadow-lg  mb-5 bg-body-tertiary rounded">
+    <h2 class="text-center">Equipo de trabajo</h2>
     <div class="container">
-      <h2 class="text-center">Equipo de trabajo</h2>
-      <p class="lead text-center">Brissio Pablo - Centurion Facundo - Gonzalez Alexander</p>
+     
+      <div class="row g-0 text-center ">
+          <div class="col-4 colblock">
+            <div class="card ">
+              <img class="mx-auto w-auto p-3" src="img/Mi proyecto.png" > 
+              <p class="lead text-center">Brissio Pablo</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card"> 
+              <img class="mx-auto w-auto p-3" src="img/Mi proyecto.png" > 
+              <p class="lead text-center">Centurion Facundo</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card "> 
+              <img class="mx-auto w-auto p-3" src="img/Mi proyecto.png" > 
+              <p class="lead text-center">Gonzalez Alexander</p>
+            </div>
+          </div>
+          
+      </div>
+      
     </div>
   </div>
 
@@ -82,7 +103,7 @@
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img class="card-img-top" src="/img/zapa.jpg" alt="Imagen 6">
+        <img class="card-img-top mx-auto" src="/img/zapa.jpg" alt="Imagen 6">
         <div class="card-body">
           <p class="card-text">Producto Nro 6</p>
         </div>
@@ -92,11 +113,11 @@
 </div>
 
   <!-- Formularios -->
-  <div class="row">
+  <div class="row pb-3">
     <div class="col-md-6">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Contacto</h3>
+      <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <div class="card-body ">
+          <h3 class="card-title ">Contacto</h3>
           <form id="contact-form">
             <div class="mb-3">
               <label for="nombre-input" class="form-label">Nombre y Apellido</label>
@@ -116,7 +137,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="card">
+      <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
         <div class="card-body">
           <h3 class="card-title">Cotización de un Producto</h3>
           <form id="cotizacion-form">
