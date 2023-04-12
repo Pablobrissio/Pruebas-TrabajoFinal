@@ -1,0 +1,117 @@
+/* Color primario de fondo */
+body {
+  background-color: #D7E2FA;
+}
+
+/* Color secundario en algunos elementos de la página */
+#servicios h2,
+#cotizar-form h2 {
+  color: #99CBFA;
+  border-bottom: 1px solid #99CBFA;
+}
+
+/* Color de acento en los títulos de la página */
+h1, h2, h3 {
+  color: #5a399e;
+}
+
+/* Margen a elementos principales de la página */
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #5a399e;
+  border-color: #5a399e;
+}
+
+.btn-primary:hover {
+  background-color: #99CBFA;
+  border-color: #99CBFA;
+  color: #fff;
+}
+
+/* Img Productos */
+.card-img-top {
+  border-radius: 0;
+  border: 1px solid #ddd;
+  max-height: 250px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #99CBFA;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #D7E2FA;
+}
+
+.redes_sociales{
+  color: black;
+  padding: 15px;
+}
+
+.logos_redes{
+  color: black;
+}
+
+/* Formularios */
+.form-control:focus {
+  border-color: #5a399e;
+  box-shadow: none;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  border: 1px solid #5a399e;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus {
+  border-color: #99CBFA;
+}
+
+.form-group .help-block {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+.form-group.has-error input[type="text"],
+.form-group.has-error input[type="email"],
+.form-group.has-error input[type="tel"] {
+  border-color: #dc3545;
+}
+
+.form-group.has-error .help-block {
+  display: block;
+}
+
+.presentacion-empresa {
+  margin-top: 50px;
+}
