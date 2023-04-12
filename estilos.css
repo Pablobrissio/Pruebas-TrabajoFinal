@@ -2,6 +2,18 @@
 body {
   background-color: #D7E2FA;
 }
+/* Header o navbar*/
+.backnav{
+  background: rgba(37, 20, 7, 0.76);
+  background-image: url(/img/backnav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  background-position-y: 25%;
+  background-blend-mode: darken;
+  
+}
+
 
 /* Color secundario en algunos elementos de la página */
 #servicios h2,
