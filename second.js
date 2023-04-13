@@ -1,43 +1,37 @@
-// Variables para pruebas
-var nombre = "";
-var correo = "";
-var telefono = "";
-var producto = "";
-var correoCotizacion = "";
-
-// Obtenemos los elementos del DOM correspondientes a cada formulario
-var contactoForm = document.getElementById("contact-form");
-var cotizacionForm = document.getElementById("cotizacion-form");
-
 $(document).ready(function() {
-  // Form. Contacto
+  // Validación del formulario de contacto
   $('#contact-form').submit(function(event) {
-    event.preventDefault();
-    // Actualizo variables para los datos
+    event.preventDefault(); 
     var nombre = $('#nombre-input').val();
     var correo = $('#correo-input').val();
     var telefono = $('#telefono-input').val();
-    //muestro los datos que se ingresan al formulario
-    console.log('Nombre: ' + nombre);
-    console.log('Correo electrónico: ' + correo);
-    console.log('Teléfono: ' + telefono);
-    // Blanqueo de los camos
-    $('#nombre-input').val('');
-    $('#correo-input').val('');
-    $('#telefono-input').val('');
+
+    if (nombre === '' || correo === '' || telefono === '') {
+      alert('Por favor, complete todos los campos del formulario de contacto.');
+    } else {
+      console.log('Nombre y Apellido: ' + nombre);
+      console.log('Correo electrónico: ' + correo);
+      console.log('Teléfono: ' + telefono);
+      $('#nombre-input').val('');
+      $('#correo-input').val('');
+      $('#telefono-input').val('');
+    }
   });
 
-// Form. Cotizacion
-$('#cotizacion-form').submit(function(event) {
-  event.preventDefault();
-  // Actualizacion de variables para guardar los datos
-  var producto = $('#producto-input').val();
-  var correo = $('#cotizacion-correo-input').val();
-  //muestro datos ingresados
-  console.log('Producto: ' + producto);
-  console.log('Correo electrónico: ' + correo);
-  // Blanquo de los campos
-  $('#producto-input').val('');
-  $('#cotizacion-correo-input').val('');
+  // Validación del formulario de cotización
+  $('#cotizacion-form').submit(function(event) {
+    event.preventDefault(); 
+    var producto = $('#producto-input').val();
+    var correo = $('#cotizacion-correo-input').val();
+
+    if (producto === '' || correo === '') {
+      alert('Por favor, complete todos los campos del formulario de cotización.');
+    } else {
+      console.log('Producto a Cotizar: ' + producto);
+      console.log('Correo electrónico: ' + correo);
+      $('#producto-input').val('');
+      $('#cotizacion-correo-input').val('');
+    }
+  });
 });
-});
+
