@@ -1,6 +1,10 @@
 /* Color primario de fondo */
 body {
-  background-color: #f7d4a8;
+  background-image: url(/img/Frame\ 2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  color: white;
 }
 /* Header o navbar*/
 .backnav{
@@ -15,13 +19,15 @@ body {
 -webkit-box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
 -moz-box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
   
-
-
 }
 
-.centrado{
-display:block;
+/*Aplica la opacidad y el fondo no redondeado a la presentacion y equipo de trabajo*/
+.backpresent{
+  background-color: #c78a2e49;
+  border: none;
 }
+
+
 
 /* Color secundario en algunos elementos de la página */
 #servicios h2,
@@ -32,7 +38,7 @@ display:block;
 
 /* Color de acento en los títulos de la página */
 h1, h2, h3 {
-  color: #5a399e;
+  color: #FF3600;
 }
 
 /* Margen a elementos principales de la página */
