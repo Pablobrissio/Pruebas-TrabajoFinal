@@ -15,6 +15,7 @@ $(document).ready(function() {
       $('#nombre-input').val('');
       $('#correo-input').val('');
       $('#telefono-input').val('');
+      alert("Sus datos fueron guardados con Exito.")
     }
   });
 
@@ -31,6 +32,7 @@ $(document).ready(function() {
       console.log('Correo electrónico: ' + correo);
       $('#producto-input').val('');
       $('#cotizacion-correo-input').val('');
+      alert("Sus datos fueron guardados con Exito.")
     }
   });
 });
