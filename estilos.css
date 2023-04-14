@@ -3,24 +3,55 @@ body {
   background-image: url(/img/Frame\ 2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: auto;
-  color: white;
+   color: white;
 }
+
+
+@media screen and (max-width:375xp) {
+  .backnav {
+    width: 100%;
+  }
+}
+
+
 /* Header o navbar*/
+
 .backnav{
   background: rgba(32, 17, 5, 0.849);
   background-image: url(/img/backnav.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
-  background-position-y: 25%;
+  
   background-blend-mode: darken;
   box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
 -webkit-box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
 -moz-box-shadow: 1px 31px 47px -17px rgba(0,0,0,0.52);
-  
+ 
 }
 
+
+.imgproducto{
+  background-position: center;
+ width: 300px;
+}
+
+
+.scroll-container {
+  
+  height: 800px;
+ 
+}
+
+a, .nav-link{
+  color:#ffffff ;
+  font-weight:bold;
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: #ffffff;
+  --bs-nav-pills-link-active-bg: #552417;
+}
 /*Aplica la opacidad y el fondo no redondeado a la presentacion y equipo de trabajo*/
 .backpresent{
   background-color: #c78a2e49;
@@ -38,7 +69,12 @@ body {
 
 /* Color de acento en los títulos de la página */
 h1, h2, h3 {
-  color: #FF3600;
+  font-family: 'Inconsolata', monospace;
+font-family: 'Racing Sans One', cursive;
+  font-size: 60px;
+  background: -webkit-linear-gradient(#383838bb, #c43f1e);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Margen a elementos principales de la página */
@@ -49,13 +85,13 @@ h1, h2, h3 {
 
 /* Botones */
 .btn-primary {
-  background-color: #5a399e;
-  border-color: #5a399e;
+  background-color: #ca5017;
+  border-color: #ca5017;
 }
 
 .btn-primary:hover {
-  background-color: #99CBFA;
-  border-color: #99CBFA;
+  background-color: #cab817;
+  border-color: #cab817;
   color: #fff;
 }
 
@@ -67,11 +103,7 @@ h1, h2, h3 {
 }
 
 
-img {
-  max-width: 100%;
-  height: auto;
-  max-width: 300px;
-}
+
 
 .producto img {
   max-width: 100%;
@@ -81,7 +113,7 @@ img {
 
 /* Footer */
 footer {
-  background-color: #99CBFA;
+  background-color: #d1491f;
   padding: 20px;
   text-align: center;
 }
@@ -139,5 +171,5 @@ footer a:hover {
 }
 
 .margin-top {
-  margin-top: 100px;
+  margin-bottom: 100px;
 }
