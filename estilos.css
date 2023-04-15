@@ -70,7 +70,7 @@ a, .nav-link{
 /* Color de acento en los títulos de la página */
 h1, h2, h3 {
   font-family: 'Inconsolata', monospace;
-font-family: 'Racing Sans One', cursive;
+  font-family: 'Racing Sans One', cursive;
   font-size: 60px;
   background: -webkit-linear-gradient(#383838bb, #c43f1e);
     -webkit-background-clip: text;
@@ -101,9 +101,6 @@ font-family: 'Racing Sans One', cursive;
   border: 1px solid #ddd;
   max-height: 250px;
 }
-
-
-
 
 .producto img {
   max-width: 100%;
@@ -176,4 +173,16 @@ footer a:hover {
 
 .margin-top {
   margin-bottom: 100px;
+}
+
+/* Presentaciones Personal */
+
+.textosPersonales{
+  font-family: 'Oswald', sans-serif;
+  font-size: xx-large;
+}
+
+.titulosPesronales{
+  font-family: 'Racing Sans One', cursive;
+  font-size: xx-large;
 }
